@@ -1,9 +1,9 @@
 package ru.miroks404.todolistapp.domain
 
-class GetShopList {
+class GetShopList(private val shopListRepository: ShopListRepository) {
 
     fun getShopList(): List<ShopItem> {
-        TODO()
+        return shopListRepository.getShopList()
     }
 
 }

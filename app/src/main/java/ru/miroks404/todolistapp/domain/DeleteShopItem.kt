@@ -1,9 +1,9 @@
 package ru.miroks404.todolistapp.domain
 
-class DeleteShopItem {
+class DeleteShopItem(private val shopListRepository: ShopListRepository) {
 
     fun deleteShopItem(shopItem: ShopItem) {
-        TODO()
+        shopListRepository.deleteShopItem(shopItem)
     }
 
 }

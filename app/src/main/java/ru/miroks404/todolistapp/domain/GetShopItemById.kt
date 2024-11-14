@@ -1,9 +1,9 @@
 package ru.miroks404.todolistapp.domain
 
-class GetShopItemById {
+class GetShopItemById(private val shopListRepository: ShopListRepository) {
 
     fun getShopItemById(shopItemId: Int) : ShopItem {
-        TODO()
+        return shopListRepository.getShopItemById(shopItemId)
     }
 
 }
